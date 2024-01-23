@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'signup.css' %}">
+</head>
+<body>
+    <div class="topnav">
+        <a href="womensafety.html"><i class="fa fa-fw "></i><img class="logo" src="logo1.jpg" height="30px"width="30px" ></a>
+        <a class="active" href="#about">Sign In</a>
+        <a href="womensafety.html"> <i class="fa fa-home"></i>Home</a>
+        </div>   
+        <h1>SIGN UP</h1>
+       <div>
+        <form method="POST">
+            {% csrf_token %}
+    <div class="container">
+        <fieldset><br>
+        
+           
+              <label for="fname">First name:</label>
+              <input type="text" name="fname"  placeholder="enter your first name" size="50"><br><br>
+              <label for="lname" >Last name:</label>
+              <input type="text" name="fname" placeholder="enter your last name" size="50"><br><br>
+              <label for="mail" >E-mail:</label>
+              <input type="text" name="mail" placeholder="enter your mail" size="53"><br><br>
+              <label for="password"> Create Password:</label>
+              <input type="text" name="password"  placeholder="enter your password"size="51"><br><br>
+              <label for=" confirm password"> Confirm password:</label>
+              <input type="text" name="confirm password"  placeholder="confirm your password"size="43"><br><br>
+              <label for="contact" >Contact number:</label>
+              <input type="number" name="contact" placeholder="enter your contact number"size="50"><br><br>
+              <input type="submit" value="Submit"><br><br>
+            </form>
+         
+        </fieldset>
+      </div>
+    
+      </form>
+    
+</body>
+</html>
